@@ -1,6 +1,9 @@
+html {
+    height: 100%;
+}
 
-body{
-    height: 100vh;
+body {
+    height: 100%;
     background-color: #56BBF1;
     overflow-x: hidden;
     margin: 0;
@@ -8,25 +11,29 @@ body{
     box-sizing: border-box;
     color: white;
     font-family: sans-serif;
-   
-    
-}
-
-
-   
-
-
-
-.container{
     display: flex;
-    
-    width: 100vw;
-    justify-content: space-around;
-    align-items: flex-start;
-    
+    flex-direction: column;
+
+
+
 }
 
-img{
+
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+img {
     width: 300px;
     height: 300px;
     border-radius: 5px;
@@ -34,31 +41,74 @@ img{
 }
 
 .producto,
-h2{
+h2 {
     text-align: center;
 }
 
+
+
 h1,
-.buscador{
+.buscador {
     background-color: #4D77FF;
 }
 
 
-header{
+
+
+
+header {
     display: flex;
     flex-direction: column;
     background-color: #4D77FF;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-    
+
 }
-.producto{
-    transition: ease-in-out 0.2s ;
+
+.producto {
+    transition: ease-in-out 0.2s;
 }
-.producto:hover{
+
+.producto:hover {
     transform: scale(1.1);
-    
+
 }
+
+
+nav {
+    width: 200px;
+    text-align: center;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    color: gray;
+
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.productos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+
+}
+
+
+
+
 
 /*
 Ahora estilo los productos
@@ -66,19 +116,17 @@ Ahora estilo los productos
 
 */
 
-.section{
+.section {
     padding: 10px;
 }
 
-.seccion-comentarios{
+.seccion-comentarios {
     display: flex;
     gap: 5px;
 }
 
-.comentario{
+.comentario {
     background-color: #4D77FF;
     padding: 5px;
     border-radius: 5px;
 }
-
-
